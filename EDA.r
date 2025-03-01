@@ -1,5 +1,5 @@
 # Install R packages (if needed)
-# install.packages("pacman")
+#install.packages("pacman")
 library(pacman)
 pacman::p_load(tidyverse, # for data wrangling
                metafor, # for meta-analytic working models
@@ -11,7 +11,8 @@ pacman::p_load(tidyverse, # for data wrangling
                PublicationBias # for some publication bias analyses
 )
 
-## Install dmetar
+#Install dmetar
+#install.packages("dmetatools")
 #devtools::install_github("MathiasHarrer/dmetar")
 library(dmetar)
 
@@ -19,7 +20,7 @@ library(dmetar)
 ncores <- parallel::detectCores() - 1
 
 # load data file
-dat<- read_excel("Gender_data_simp.xlsx")
+dat<- read_excel("./1-2/Gender_data_simp.xlsx")
 
 # Data structure
 str(dat)
